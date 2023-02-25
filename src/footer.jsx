@@ -3,7 +3,7 @@ import "./styles.css";
 function Footer(){
     return(
         <div className="footer">
-            <h5>&copy; 2023</h5>
+            <h5><i class="fa-sharp fa-regular fa-copyright"></i>&nbsp; {new Date().getFullYear()}</h5>
         </div>
     )
 }
