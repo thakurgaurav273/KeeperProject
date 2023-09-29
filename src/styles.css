@@ -8,6 +8,7 @@ body{
     margin: 0 0;
     background-color: rgb(217, 221, 222);
     font-family: 'McLaren', cursive;
+    height: 100%;
 }
 h2{
     margin: 0 0;
@@ -16,27 +17,69 @@ h2{
     font-family: 'McLaren', cursive;
     padding-left: 25px;
 }
-
+.title-of-note{
+    border: 0;
+}
+.content-of-note{
+    margin-top: 15px;
+    border: 0;
+}
+.butt{
+    text-align: right;
+}
+.fa-trash{
+    color: #fbbc04;
+}
+.add_button{
+    background-color: #fbbc04;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    height: 35px;
+    width: 35px;
+    padding:0 0;
+    border-radius: 50%;
+    border: 0;
+}
 h5{
     margin: 0 0;
 }
 .footer{
-    position:fixed;
-    margin-left: 45%;
-    bottom: 0;
     color: grey;
     font-size: 20px;
-    
-
+    position: absolute;
+    bottom: 0;
+    left: 48vw;
+    text-align: center;
 }
+
 p{
     margin: 0 0;
 }
-.note{
-    margin:10px 25px;
+
+.note-title{
+    margin: 0 0;
+}
+.note2{
     width: 200px !important;
     border-radius: 7px 7px;
     display: inline-block;
+    text-align: left !important;
     padding: 8px 8px;
     background-color: white;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+.note{
+    width: 300px !important;
+    border-radius: 7px 7px;
+    display: inline-block;
+    text-align: left !important;
+    padding: 8px 8px;
+    background-color: white;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.note-container{
+    text-align: center;
 }
