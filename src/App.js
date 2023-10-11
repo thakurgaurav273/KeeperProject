@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Header from './Header.jsx';
-import Footer from './footer.jsx';
 import AddNote from './addNote.jsx';
 import Note from './note.jsx';
 function App() {
@@ -19,14 +18,15 @@ function App() {
         })
     }
   return (
-    <>
+    <div className='imp-content'>
     <Header/>
     <AddNote newNote={addNewNote}/>
-    <Footer/>
     {item.map((val, index) => (
-        <Note key={index} id={index} title={val.title} content={val.content} deleteItem={onDelete}/>
+      <Note key={index} id={index} title={val.title} content={val.content} deleteItem={onDelete}/>
       ))}
-    </>
+    <h5 className="copyright"><i className="fa-sharp fa-regular fa-copyright"></i>&nbsp; {new Date().getFullYear()}</h5>
+
+    </div>
   );
 }
 
